@@ -1,0 +1,112 @@
+.bar{
+    background: transparent;
+}
+.bar:after{
+    display:none
+}
+.content-top{
+    width:100vw;
+    height:12rem;
+    position:relative;
+    display:block;
+    background: linear-gradient(to right, #117a63, #116f7a);
+    padding:1.5rem 0 1rem
+}
+.content-person{
+    width:100vw;
+    height:9.5rem;
+}
+.content-person-top{
+    width:100vw;
+    height:4rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-person-top img{
+    width:3.6rem;
+    height:3.6rem;
+    border-radius:1.8rem;
+}
+.content-person-bottom{
+    width:100vw;
+    height:5.5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-person-cell{
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.person-cell-title{
+    display:flex;
+    height:2rem;
+    align-items: center;
+    justify-content: center;
+    font-size:14px;
+    color:#9dcfd5
+}
+.person-cell-num{
+    display:flex;
+    height:2rem;
+    align-items: center;
+    justify-content: center;
+    font-size:26px;
+    color:#d0f9fe;
+    margin: 0;
+}
+.buttons-tab:after{
+    background-color: #ffffff;
+}
+.buttons-tab .button{
+    font-size:16px;
+    color:#333333;
+    border-bottom:none;
+    position:relative;
+}
+.buttons-tab .button.active {
+    color: #116f7a;
+}
+.buttons-tab .button.active:after{
+    position:absolute;
+    left:25%;
+    right:25%;
+    bottom:0;
+    height:2px;
+    content:'';
+    background: #116f7a;
+}
+.content-block {
+    margin:0;
+    padding:0;
+}
+.list-block {
+    margin:0;
+    font-size:14px;
+}
+.item-add{
+    width:100%;
+    height:4rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-add-icon{
+    width:24px;
+    height:24px;
+    background: url('../image/add.png');
+    background-size: cover;
+}
+.btn-small{
+    height:1.8rem;
+    border-radius:0.9rem;
+    background: #a69063;
+    width:60%;
+    font-size: 14px;
+    color:#fff
+}

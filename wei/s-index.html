@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>学生端</title>
+    <link rel="stylesheet" href="css/sm.css" />   <!--框架样式-->
+    <link rel="stylesheet" href="css/swiper.css" />  <!--轮播样式-->
+    <link rel="stylesheet" href="css/index.css" />   <!--当前页面样式-->
+</head>
+<body>
+<div class="content">
+    <!--swiper滑动组建-->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="image/banner.png" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image/banner.png" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image/banner.png" />
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="content-grid">
+        <div class="grid-cell">
+            <a href="s-course.html">
+                <i class="grid-icon icon-cell-1"></i>
+                我的课程
+            </a>
+        </div>
+        <div class="grid-cell">
+            <a href="">
+                <i class="grid-icon icon-cell-4"></i>
+                讨论区
+            </a>
+        </div>
+    </div>
+</div>
+<script type='text/javascript' src='js/zepto.js' charset='utf-8'></script> <!--公共类库-->
+<script type='text/javascript' src='js/swiper.js' charset='utf-8'></script> <!--轮播-->
+<script>
+    $(function(){
+        var swiper = new Swiper('.swiper-container', {           //轮播实例化
+            pagination: '.swiper-pagination',
+            paginationClickable: true
+        });
+    })
+</script>
+</body>
+</html>

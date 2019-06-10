@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>真实课堂详情</title>
+    <link rel="stylesheet" href="css/sm.css" />
+    <link rel="stylesheet" href="css/t-real-detail.css" />
+</head>
+<body>
+   <div class="content-top">
+       <header class="bar bar-nav">
+           <a class="button button-link button-nav pull-left back">
+               <span class="icon icon-left"></span>
+           </a>
+       </header>
+       <div class="content-person">
+           <div class="content-person-top">
+               <img src="image/t_person.png" />
+           </div>
+           <div class="content-person-bottom">
+               <div class="content-person-cell">
+                   <label class="person-cell-title">选修人数</label>
+                   <p class="person-cell-num">55</p>
+               </div>
+               <div class="content-person-cell">
+                   <!--<label class="person-cell-title">签到人数</label>-->
+                   <!--<p class="person-cell-num">49</p>-->
+                   <button class="btn btn-small">开始签到</button>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="content-down">
+       <div class="buttons-tab">
+           <a href="#tab1" class="tab-link active button">课前</a>
+           <a href="#tab2" class="tab-link button">课中</a>
+           <a href="#tab3" class="tab-link button">课后</a>
+       </div>
+       <div class="content-block">
+           <div class="tabs">
+               <div id="tab1" class="tab active">
+                   <div class="content-block">
+                       <div class="list-block">
+                           <ul>
+                               <li class="item-content item-link" id="item_1">
+                                   <div class="item-media"><i class="icon icon-f7"></i></div>
+                                   <div class="item-inner">
+                                       <div class="item-title">讲义</div>
+                                   </div>
+                               </li>
+                               <li class="item-content item-link" id="item_2">
+                                   <div class="item-media"><i class="icon icon-f7"></i></div>
+                                   <div class="item-inner">
+                                       <div class="item-title">预习</div>
+                                   </div>
+                               </li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+               <div id="tab2" class="tab">
+                   <div class="content-block">
+                       <div class="list-block">
+                           <ul>
+                               <li class="item-content item-link item-exe" id="items_1">
+                                   <div class="item-media"><i class="icon icon-f7"></i></div>
+                                   <div class="item-inner">
+                                       <div class="item-title">习题一</div>
+                                   </div>
+                               </li>
+                               <li class="item-content item-link item-exe" id="items_2">
+                                   <div class="item-media"><i class="icon icon-f7"></i></div>
+                                   <div class="item-inner">
+                                       <div class="item-title">习题二</div>
+                                   </div>
+                               </li>
+                               <li class="item-content item-link item-exe" id="items_3">
+                                   <div class="item-media"><i class="icon icon-f7"></i></div>
+                                   <div class="item-inner">
+                                       <div class="item-title">习题二</div>
+                                   </div>
+                               </li>
+                           </ul>
+                           <div class="item-add">
+                               <div class="item-add-icon"></div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div id="tab3" class="tab">
+                   <div class="content-block">
+                       <div class="list-block">
+                           <ul>
+                               <li class="item-content item-link">
+                                   <div class="item-media"><i class="icon icon-f7"></i></div>
+                                   <div class="item-inner">
+                                       <div class="item-title">作业</div>
+                                   </div>
+                               </li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+    <script type='text/javascript' src='js/zepto.js' charset='utf-8'></script>
+    <script type='text/javascript' src='js/sm.js' charset='utf-8'></script>
+    <script>
+        $(function(){
+            $('.item-exe').on('tap',function(){
+                location.href = 't-exe.html'
+            })
+            $('.item-add-icon').on('tap',function(){
+                location.href = 't-add-exe.html'
+            })
+            $('#item_1').on('tap',function(){
+                location.href = 't-handout.html'
+            })
+            $(document).on('click','.btn-small', function () {
+                $.prompt('请设置签到码', function (value) {
+                    $.alert(value);
+                });
+            });
+        })
+    </script>
+</body>
+</html>

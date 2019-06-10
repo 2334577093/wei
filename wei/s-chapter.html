@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>章节资源</title>
+    <link rel="stylesheet" href="css/sm.css" />   <!--框架样式-->
+    <link rel="stylesheet" href="css/t-course.css" />  <!--列表样式-->
+    <link rel="stylesheet" href="css/s-chapter.css" /> <!--当前页面样式-->
+</head>
+<body>
+    <header class="bar bar-nav">
+        <a class="button button-link button-nav pull-left back">
+            <span class="icon icon-left"></span>
+        </a>
+        <h2 class="title">章节资源</h2>
+    </header>
+    <div class="content native-scroll">
+        <div class="list-block cards-list">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-set-left set-yellow"></div>
+                    讲义
+                </div>
+                <div class="card-content">
+                    <div class="list-block">
+                        <ul>
+                            <li>
+                                <a class="item-content item-alert" href="#">
+                                    <div class="item-media">
+                                        <img src="image/touxiang.jpg" width="50" />
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-big-title">
+                                            《算法数据结构》
+                                            <span class="item-small-light">2019-05-24  10:30</span>
+                                        </div>
+                                        <div class="item-small-title">
+                                            苏大强
+                                            <span class="item-small-state ">大小1.94M</span>
+                                            <span class="item-small-state ">下载 0</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="item-content item-alert" href="#">
+                                    <div class="item-media">
+                                        <img src="image/touxiang.jpg" width="50" />
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-big-title">
+                                            《算法数据结构》
+                                            <span class="item-small-light">2019-05-24  10:30</span>
+                                        </div>
+                                        <div class="item-small-title">
+                                            苏大强
+                                            <span class="item-small-state ">大小1.94M</span>
+                                            <span class="item-small-state ">下载 0</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-set-left set-blue"></div>
+                    视频
+                </div>
+                <div class="card-content">
+                    <div class="list-block">
+                        <ul>
+                            <li>
+                                <a class="item-content item-link" href="s-video.html">
+                                    <div class="item-media">
+                                        <img src="image/touxiang.jpg" width="50" />
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-big-title">
+                                            《算法数据结构》
+                                            <span class="item-small-light">2019-05-24  10:30</span>
+                                        </div>
+                                        <div class="item-small-title">
+                                            苏大强
+                                            <span class="item-small-state ">大小1.94M</span>
+                                            <span class="item-small-state ">下载 0</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="item-content item-link" href="s-video.html">
+                                    <div class="item-media">
+                                        <img src="image/touxiang.jpg" width="50" />
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-big-title">
+                                            《算法数据结构》
+                                            <span class="item-small-light">2019-05-24  10:30</span>
+                                        </div>
+                                        <div class="item-small-title">
+                                            苏大强
+                                            <span class="item-small-state ">大小1.94M</span>
+                                            <span class="item-small-state ">下载 0</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type='text/javascript' src='js/zepto.js' charset='utf-8'></script> <!--公共类库-->
+    <script type='text/javascript' src='js/sm.js'></script>  <!--框架-->
+    <script>
+        $(document).on('tap', '.item-alert',function () {
+            $.confirm('确定下载?',function(){
+                //执行下载的方法
+            },function(){
+                $.alert('确定取消');
+            });
+        });
+    </script>
+</body>
+</html>

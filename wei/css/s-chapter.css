@@ -1,0 +1,24 @@
+.card-header{
+    font-size:14px;
+}
+.card-set-left{
+    width:3px;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    border-top-left-radius: 0.1rem;
+    border-bottom-left-radius: 0.1rem;
+}
+.set-yellow{
+    background: #ecab1f;
+}
+.set-blue{
+    background: #6679eb;
+}
+.set-green{
+    background: #11baca;
+}
+.item-content{
+    color:#333333
+}
